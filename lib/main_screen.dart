@@ -7,14 +7,6 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          leading: Icon(
-            Icons.mobile_friendly_rounded,
-            size: 50,
-            color: Colors.green,
-          ),
-          backgroundColor: Colors.black87,
-        ),
         body: Container(
           child: ListView(
             children: [
@@ -27,75 +19,106 @@ class MainScreen extends StatelessWidget {
                       height: 300,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/images/tema.jpg'),
+                          image: AssetImage('assets/images/tema1.jpg'),
                           fit: BoxFit.cover,
                         ),
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 30),
-                      height: 250,
-                      width: 310,
+                      width: 330,
+                      height: 190,
                       decoration: BoxDecoration(
-                        color: Colors.blueGrey,
-                      ),
-                      child: Container(
-                        height: 150,
-                        width: 150,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          image: DecorationImage(
-                              image: AssetImage('assets/images/software.jpg'),
-                              fit: BoxFit.cover),
-                        ),
+                          color: Colors.purple,
+                          borderRadius: BorderRadius.circular(25)),
+                      child: Column(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 15),
+                            height: 100,
+                            width: 310,
+                            decoration: BoxDecoration(
+                              color: Colors.deepPurpleAccent,
+                            ),
+                            child: Container(
+                              height: 150,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/images/software.jpg'),
+                                    fit: BoxFit.cover),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 310,
+                            height: 50,
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.deepPurpleAccent,
+                            ),
+                            child: Text(
+                              'Perawatan internal komputer (Software)',
+                              style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
-                    Container(
-                      width: 310,
-                      height: 50,
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(
-                        color: Colors.blueGrey,
-                      ),
-                      child: Text(
-                        'Perawatan internal komputer (Software)',
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
-                      ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 10),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 25),
-                      height: 250,
-                      width: 310,
+                      width: 330,
+                      height: 190,
                       decoration: BoxDecoration(
-                        color: Colors.blueGrey,
-                      ),
-                      child: Container(
-                        height: 150,
-                        width: 150,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          image: DecorationImage(
-                              image: AssetImage('assets/images/hardware.jpg'),
-                              fit: BoxFit.cover),
-                        ),
-                      ),
-                    ),
-                    Container(
-                      width: 310,
-                      height: 50,
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.all(10),
-                      decoration: BoxDecoration(color: Colors.blueGrey),
-                      child: Text(
-                        'Perawatan eksternal komputer (Hardware)',
-                        style: TextStyle(
-                            fontSize: 17,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white),
+                          color: Colors.lightBlueAccent,
+                          borderRadius: BorderRadius.circular(25)),
+                      child: Column(
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(top: 15),
+                            height: 100,
+                            width: 310,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                            child: Container(
+                              height: 100,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100),
+                                image: DecorationImage(
+                                    image: AssetImage(
+                                        'assets/images/hardware.jpg'),
+                                    fit: BoxFit.cover),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            width: 310,
+                            height: 50,
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.all(10),
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                            ),
+                            child: Text(
+                              'Perawatan internal komputer (Hardware)',
+                              style: TextStyle(
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],

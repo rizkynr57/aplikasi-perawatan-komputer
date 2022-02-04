@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         navigateRoute: MainScreen(),
         duration: 4000,
         imageSize: 200,
-        imageSrc: "assets/images/monitor.jpg",
+        imageSrc: "assets/images/p.png",
         backgroundColor: Colors.white,
         text: "Perawatan Komputer dan Laptop",
         textType: TextType.TyperAnimatedText,
