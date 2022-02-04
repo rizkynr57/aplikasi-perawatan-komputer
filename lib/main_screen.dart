@@ -13,6 +13,11 @@ class MainScreen extends StatelessWidget {
         body: ListView(
           children: [
             Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: <Color>[Colors.white, Colors.black],
+                ),
+              ),
               margin: EdgeInsets.only(top: 25),
               alignment: Alignment.center,
               child: Column(
