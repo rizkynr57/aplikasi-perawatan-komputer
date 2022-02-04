@@ -67,6 +67,10 @@ flutter:
       - assets/images/pembersihan-pc.jpg
       - assets/images/gambar.jpg
       - assets/images/monitor.jpg
+      - assets/images/tema.jpg
+      - assets/images/temateks.jpg
+      - assets/images/software.jpg
+      - assets/images/hardware.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

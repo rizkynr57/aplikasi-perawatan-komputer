@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       home: SplashScreenView(
         navigateRoute: MainScreen(),
         duration: 4000,
-        imageSize: 100,
+        imageSize: 200,
         imageSrc: "assets/images/monitor.jpg",
         backgroundColor: Colors.white,
         text: "Perawatan Komputer dan Laptop",
