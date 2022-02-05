@@ -110,7 +110,7 @@ class MainScreen extends StatelessWidget {
                               color: Colors.blue,
                             ),
                             child: Text(
-                              'Perawatan internal komputer (Hardware)',
+                              'Perawatan eksternal komputer (Hardware)',
                               style: TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
