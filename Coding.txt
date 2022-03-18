@@ -1,0 +1,36 @@
+Container(
+              padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 24.0),
+              height: MediaQuery.of(context).size.height * 0.30,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: _hobi.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    width: MediaQuery.of(context).size.width * 0.7,
+                    child: Card(
+                      color: Colors.lightBlueAccent,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                              colors: [Colors.black, Colors.pink]),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey,
+                              spreadRadius: 1,
+                              blurRadius: 5,
+                              offset:
+                                  Offset(0, 1), // changes position of shadow
+                            )
+                          ],
+                        ),
+                        child: Center(
+                            child: Text(
+                          _hobi[index].toString(),
+                          style: TextStyle(color: Colors.white, fontSize: 30.0),
+                        )),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
